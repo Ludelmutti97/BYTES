@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="exercicio1.js"></script>
+
+</head>
+<body>
+    
+<h1> Gerador de Números</h1>
+
+<button id= "botao"onclick="gerarNumero()">Gerar </button>
+
+<p id=" firstParagrafo">
+    Clique em Gerar
+</p>
+
+
+
+<button onclick="count()"> Incrementar </button>
+  
+    <p id="paragrafo">
+        0
+    </p>
+
+
+
+
+</body>
+
+
+
+
+
+
+<script >
+function count(){
+    
+    let p = document.getElementById("paragrafo")
+    let valor = Number(p.innerText)
+    p.innerText = valor +1
+    
+}
+
+function gerarNumero( max = 10){
+
+    let paragrafo = document.getElementById("firstParagrafo")
+    let valorText =  innerText ="Novo texto"
+    paragrafo.innerText(valorText)
+
+
+}
+
+
+</script>
+</html>
