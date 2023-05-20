@@ -1,0 +1,8 @@
+function calcularAreaCone(raio, altura) {
+  const geratriz = Math.sqrt(raio * raio + altura * altura);
+  const areaBase = Math.PI * raio * raio;
+  const areaLateral = Math.PI * raio * geratriz;
+
+  const areaTotal = areaBase + areaLateral;
+  return areaTotal;
+}
