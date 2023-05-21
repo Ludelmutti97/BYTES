@@ -1,0 +1,20 @@
+function calculaForcaDaPassword(string) {
+    // Escreve aqui o teu código
+    if(string.length === 0){
+        return "Por favor introduza uma password válida."
+    }
+
+    let pontuacao = 0
+    if( string.length >=8){
+        pontuacao++
+    }
+    if(/d/.test(string)){
+        pontuacao++
+    }
+
+    if(/[A-Z]/.test(string)){
+        pontuacao++
+    }
+
+    return pontuacao
+}
