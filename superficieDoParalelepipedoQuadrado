@@ -1,0 +1,8 @@
+function superficieDoParalelepipedoQuadrado(ladodabase, comprimento){
+    // escreve aqui a função
+   const areaBase = ladodabase * ladodabase;
+  const areaLateral = 4 * ladodabase * comprimento;
+  const areaTotal = 2 * areaBase + areaLateral;
+  
+  return areaTotal;
+}
