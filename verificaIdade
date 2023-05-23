@@ -1,0 +1,6 @@
+function verificaIdade(pessoa) {
+    // escreve aqui a função
+idade = pessoa.idade || 0
+pessoa.maiorDeIdade = idade >=18
+return pessoa
+}
