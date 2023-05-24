@@ -1,0 +1,22 @@
+function formataNumero(valor) {
+  // Escreve aqui o teu código
+
+  let novoValor = valor.toString();
+
+  if (typeof valor !== "number") {
+    return "Número não válido.";
+  }
+
+  let string = "";
+  for (let i = 0; i < novoValor.length; i++) {
+    if (novoValor[i] % 2 === 0 && novoValor[i + 1] % 2 === 0) {
+      string += novoValor[i] + "-";
+    } else {
+      string += novoValor[i];
+    }
+  }
+
+  return string;
+}
+
+console.log(formataNumero(1227669));
