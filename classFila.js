@@ -38,6 +38,6 @@ class Fila {
             return "Fila vazia!"
 
         }
-        return this.fila[i]
+        return this.fila[0]
     }
 }
