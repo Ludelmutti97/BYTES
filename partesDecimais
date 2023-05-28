@@ -1,0 +1,9 @@
+function partesDecimais(array){
+    // escreve aqui a função
+
+     return array.map(function(elemento) {
+    var parteDecimal = elemento % 1
+    var arredondado = Math.floor(parteDecimal * 100) / 100
+    return arredondado
+  })
+}
